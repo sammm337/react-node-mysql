@@ -1,0 +1,99 @@
+//   {
+//     path:"/products",
+//     element:<Products />
+//   },
+//   {
+//     path:"/cart",
+//     element:<Cart />
+//   },
+//   {
+//     path:"/admin/add-product",
+//     element:<AdminAddProduct />
+//   },
+//   {
+//     path:"/admin/product-list",
+//     element:<AdminProduct  />
+//   },
+//   {
+//     path:"/navigation",
+//     element:<Navigation/>
+//   },
+//   {
+//     path:"/order",
+//     element:<Order/>
+//   },
+//  {
+//   path:"/details/:id",
+//   element:  <Details />
+//  },
+//  {
+//   path:"/edit-product/:id",
+//   element:  <EditProducts/>
+//  },
+
+
+
+
+
+
+
+const router = createBrowserRouter(
+           
+            [
+           
+            {
+              path: "/",
+              element: <Index />},
+              {
+                path:"98y4nrr9qnrwyfn9qce",
+                element:<Parent/>
+              },
+            {  path:"/products",
+    element:<Products />
+  },
+  {
+    path:"/cart",
+    element:<Cart />
+  },
+  {
+    path:"/admin/add-product",
+    element:<AdminAddProduct />
+  },
+  {
+    path:"/admin/product-list",
+    element:<AdminProduct  />
+  },
+  {
+    path:"/navigation",
+    element:<Navigation/>
+  },
+  {
+    path:"/order",
+    element:<Order/>
+  },
+ {
+  path:"/details/:id",
+  element:  <Details />
+ },
+ {
+  path:"/edit-product/:id",
+  element:  <EditProducts/>
+ }])
+
+
+
+
+
+
+
+
+
+ <Index prods={prods} length={prods.length} handleClick2={handleClick2}/>
+       <Products prods={prods} length={prods.length} handleClick={handleClick} handleClick2={handleClick2}/>
+       <Cart cartProd={cartProd}/>
+       <AdminAddProduct />
+       <AdminProduct  prods={prods} length={prods.length} handleClick={handleClick} handleClick2={handleClick2} handleClickEdit={handleClickEdit}/>
+       <Navigation/>
+       <Order/>
+       <Details product={product}/>
+       <EditProducts handleRedirect={redirect}/>
